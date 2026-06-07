@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arc_mate_120id_35">
   <xacro:arg name="prefix" default=""/>
-  <xacro:include filename="$(find fanuc_robot_description)/urdf/arc_mate_120id_35_macro.xacro"/>
+  <xacro:include filename="$(find fanuc_robot_descriptions)/urdf/arc_mate_120id_35_macro.xacro"/>
   <link name="world"/>
   <xacro:arc_mate_120id_35 prefix="$(arg prefix)" parent="world">
     <origin xyz="0 0 0" rpy="0 0 0"/>
