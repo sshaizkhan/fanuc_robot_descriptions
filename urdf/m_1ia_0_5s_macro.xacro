@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Fanuc M-1iA/0.5S - generated from RoboDK .robot -->
+  <xacro:macro name="m_1ia_0_5s" params="prefix parent *origin">
+
+    <material name="${prefix}m_1ia_0_5s_grey"><color rgba="0.85 0.85 0.85 1.0"/></material>
+
+    <joint name="${prefix}base_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${prefix}base_link"/>
+    </joint>
+
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/base_link.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/base_link.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_1">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_1.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_1.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_2">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_2.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_2.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_3">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_3.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_3.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_4">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_4.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_4.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_5">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_5.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_5.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_6">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_6.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_6.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_7">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_7.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_7.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_8">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_8.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_8.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_9">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_9.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_9.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_10">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_10.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_10.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}link_11">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/visual/link_11.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://fanuc_robot_description/meshes/m_1ia_0_5s/collision/link_11.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${prefix}joint_1" type="revolute">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <origin xyz="0.17427876 3.1554436e-33 -0.076604444" rpy="0 0.87266463 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-0.43633231" upper="1.3962634" effort="100.0" velocity="3.1416"/>
+    </joint>
+
+    <joint name="${prefix}joint_2" type="revolute">
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <origin xyz="-0.16803634 -0.15092983 -0.20025791" rpy="1.3921934 0.83099991 -0.97153405"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-0.43633231" upper="1.3962634" effort="100.0" velocity="3.1416"/>
+    </joint>
+
+    <joint name="${prefix}joint_3" type="revolute">
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <origin xyz="-0.16803634 -0.15092983 -0.20025791" rpy="1.3921934 0.83099991 -0.97153405"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-0.43633231" upper="1.3962634" effort="100.0" velocity="3.1416"/>
+    </joint>
+
+    <joint name="${prefix}joint_4" type="revolute">
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <origin xyz="0.061518018 -0.040891016 -0.29110121" rpy="0.79409623 -0.37596495 -2.6601695"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-628.31853" upper="628.31853" effort="100.0" velocity="3.1416"/>
+    </joint>
+
+    <link name="${prefix}flange"/>
+    <joint name="${prefix}link_11-flange" type="fixed">
+      <parent link="${prefix}link_11"/>
+      <child link="${prefix}flange"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="${prefix}tool0"/>
+    <joint name="${prefix}flange-tool0" type="fixed">
+      <parent link="${prefix}flange"/>
+      <child link="${prefix}tool0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+  </xacro:macro>
+</robot>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="paint_mate_200ia_5l">
+  <xacro:arg name="prefix" default=""/>
+  <xacro:include filename="$(find fanuc_robot_description)/urdf/paint_mate_200ia_5l_macro.xacro"/>
+  <link name="world"/>
+  <xacro:paint_mate_200ia_5l prefix="$(arg prefix)" parent="world">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:paint_mate_200ia_5l>
+</robot>

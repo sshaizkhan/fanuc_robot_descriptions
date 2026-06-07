@@ -1,0 +1,38 @@
+# generated from RoboDK .robot (radians, rad/s)
+joint_limits:
+  joint_1:
+    has_position_limits: true
+    min_position: -2.879793
+    max_position: 2.879793
+    has_velocity_limits: true
+    max_velocity: 3.1416
+  joint_2:
+    has_position_limits: true
+    min_position: -1.221730
+    max_position: 1.570796
+    has_velocity_limits: true
+    max_velocity: 3.1416
+  joint_3:
+    has_position_limits: true
+    min_position: -1.396263
+    max_position: 1.483530
+    has_velocity_limits: true
+    max_velocity: 3.1416
+  joint_4:
+    has_position_limits: true
+    min_position: -6.283185
+    max_position: 6.283185
+    has_velocity_limits: true
+    max_velocity: 3.1416
+  joint_5:
+    has_position_limits: true
+    min_position: -2.094395
+    max_position: 2.094395
+    has_velocity_limits: true
+    max_velocity: 3.1416
+  joint_6:
+    has_position_limits: true
+    min_position: -6.283185
+    max_position: 6.283185
+    has_velocity_limits: true
+    max_velocity: 3.1416
